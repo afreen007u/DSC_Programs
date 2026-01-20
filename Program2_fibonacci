@@ -22,3 +22,7 @@ int main() {
  }
    return 0;
 }
+
+Output:
+enter the number of terms:4
+01123
