@@ -1,9 +1,9 @@
-//Program to perform addition and multiplication of array elements
+//Program to perform addition of array elements
 
 #include <stdio.h>
 
 int main() {
-    int i, j,k, a[3][3], b[3][3], c[3][3];
+    int i, j, a[3][3], b[3][3], c[3][3];
    
     printf("enter first array elements:\n");
     for(i=0;i<3;i++)
@@ -31,19 +31,7 @@ int main() {
         }
         printf("\n");
     } 
-      printf("matrix multiplication:\n");
-    for(i=0;i<3;i++) 
-    {
-      for(j=0;j<3;j++) 
-      {
-        c[i][j]=0;
-        for(k=0;k<3;k++) 
-        {
-            c[i][j]+=a[i][k]*b[k][j];
-        }
-        printf("%d\t",c[i][j]);
-    }
-    printf("\n");
+     "\n");
     }
     return 0;
 }
@@ -62,7 +50,4 @@ Sum of matrix:
 2	2	2	
 2	2	2	
 2	2	2	
-matrix multiplication:
-3	3	3	
-3	3	3	
-3	3	3
+
