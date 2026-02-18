@@ -1,4 +1,4 @@
-//Program to perform operations on Queue
+//Program to perform operations on Queue using linked list
 
 #include <stdio.h>
 #include <stdlib.h>
