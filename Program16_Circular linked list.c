@@ -1,4 +1,4 @@
-//Program to insert elemnt at the end and traverse a circular linked list
+//Program to insert element at the end, delete at beginning and traverse a circular linked list
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -52,12 +52,40 @@ void traverse()
     }
 }
 
+void delete_at_beg()
+{
+    struct node *temp, *last;
+    
+    if(head==NULL)
+    {
+        printf("List is empty\n");
+    }
+    else if(head->next==head) 
+    {
+        free(head);
+        head=NULL;
+    }
+    else
+    {
+        last=head;
+        while(last->next!=head)
+        {
+            last=last->next;
+        }
+        temp=head;
+        head=head->next;
+        last->next=head;
+        free(temp);
+    }
+}
+
 int main()
 {
     insert_at_end(13);
     insert_at_end(30);
     insert_at_end(14);
     insert_at_end(40);
-    
+    traverse();
+    delete_at_beg();
     traverse();
 }
