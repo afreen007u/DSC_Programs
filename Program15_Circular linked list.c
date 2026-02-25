@@ -1,4 +1,4 @@
-//Program to insert and traverse circular linked list
+//Program to insert element at beginning and traverse circular linked list
 
 #include <stdio.h>
 #include <stdlib.h>
